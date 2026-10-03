@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Events</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <div>
+                <h1>StudentHub</h1>
+                <p>College Events</p>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Upcoming Events</h2>
+
+            <div class="data-controls">
+                <div>
+                    <label for="eventSearch">Search Events:</label>
+                    <input type="text" id="eventSearch" placeholder="Search by event title">
+                </div>
+
+                <div>
+                    <label for="eventCategory">Category:</label>
+                    <select id="eventCategory">
+                        <option value="all">All Categories</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Career">Career</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="eventSort">Sort:</label>
+                    <select id="eventSort">
+                        <option value="default">Default</option>
+                        <option value="az">Title A-Z</option>
+                        <option value="za">Title Z-A</option>
+                        <option value="dateAsc">Date: Oldest First</option>
+                        <option value="dateDesc">Date: Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <p id="eventLoading">Loading events...</p>
+            <p id="eventError" class="error"></p>
+            <div id="eventList"></div>
+
+            <div class="pagination">
+                <button id="eventPrev">Previous</button>
+                <span id="eventPage">Page 1</span>
+                <button id="eventNext">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

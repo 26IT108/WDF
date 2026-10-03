@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="StudentHub Logo">
+            <div>
+                <h1>StudentHub</h1>
+                <p>Your Student Portal</p>
+            </div>
+        </div>
+    </header>
+
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Student Registration</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="course">Course:</label>
+                    <select id="course" name="course">
+                        <option value="btech">B.Tech</option>
+                        <option value="bca">BCA</option>
+                        <option value="bsc">B.Sc</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </p>
+
+                <p>
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" id="confirm" name="confirm" required>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </p>
+
+                <button type="submit">Register</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
