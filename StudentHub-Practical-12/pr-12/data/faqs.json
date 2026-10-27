@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "question": "What is StudentHub?",
+        "answer": "StudentHub is a student portal for managing academic information, events, notices and student activities."
+    },
+    {
+        "id": 2,
+        "question": "How can I register on StudentHub?",
+        "answer": "Open the Register page, enter your details and submit the registration form."
+    },
+    {
+        "id": 3,
+        "question": "How can I log in?",
+        "answer": "Open the Login page and enter your registered email and password."
+    },
+    {
+        "id": 4,
+        "question": "Can I update my profile?",
+        "answer": "Yes, students can update their profile information from the Profile page."
+    },
+    {
+        "id": 5,
+        "question": "Where can I find upcoming events?",
+        "answer": "You can view upcoming college events on the Events page."
+    },
+    {
+        "id": 6,
+        "question": "How can I search for an event?",
+        "answer": "Use the search box on the events data page to find an event by its title."
+    },
+    {
+        "id": 7,
+        "question": "Can I filter events?",
+        "answer": "Yes, events can be filtered according to their category."
+    },
+    {
+        "id": 8,
+        "question": "What information is required during registration?",
+        "answer": "You need to provide your name, email, mobile number, password, course, year, gender and accept the terms."
+    },
+    {
+        "id": 9,
+        "question": "What should my password contain?",
+        "answer": "Your password should contain at least 8 characters, an uppercase letter, a lowercase letter, a number and a special character."
+    },
+    {
+        "id": 10,
+        "question": "Can I use StudentHub on a mobile device?",
+        "answer": "Yes, StudentHub is designed to work on mobile, tablet and desktop screens."
+    },
+    {
+        "id": 11,
+        "question": "How can I find student information?",
+        "answer": "Student information can be displayed from the students JSON dataset on the student data page."
+    },
+    {
+        "id": 12,
+        "question": "What is the purpose of the FAQ section?",
+        "answer": "The FAQ section provides answers to commonly asked questions about StudentHub."
+    },
+    {
+        "id": 13,
+        "question": "Can events be sorted?",
+        "answer": "Yes, the event records can be sorted using JavaScript array sorting."
+    },
+    {
+        "id": 14,
+        "question": "What happens if JSON data cannot be loaded?",
+        "answer": "A user-friendly error message can be displayed when the JSON data cannot be loaded."
+    },
+    {
+        "id": 15,
+        "question": "What is Fetch API used for?",
+        "answer": "Fetch API is used to request and retrieve JSON data from an external file and use it in the webpage."
+    }
+]

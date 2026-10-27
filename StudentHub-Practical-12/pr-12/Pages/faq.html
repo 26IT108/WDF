@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - FAQ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <div>
+                <h1>StudentHub</h1>
+                <p>Frequently Asked Questions</p>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="data-controls">
+                <div>
+                    <label for="faqSearch">Search Questions:</label>
+                    <input type="text" id="faqSearch" placeholder="Search FAQ">
+                </div>
+
+                <div>
+                    <label for="faqSort">Sort:</label>
+                    <select id="faqSort">
+                        <option value="default">Default</option>
+                        <option value="az">Question A-Z</option>
+                        <option value="za">Question Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <p id="faqLoading">Loading FAQs...</p>
+            <p id="faqError" class="error"></p>
+            <div id="faqList"></div>
+
+            <div class="pagination">
+                <button id="faqPrev">Previous</button>
+                <span id="faqPage">Page 1</span>
+                <button id="faqNext">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?php
+require_once __DIR__ . '/../php/auth.php';
+require_role('admin');
+?>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin Dashboard - StudentHub</title><link rel="stylesheet" href="../css/style.css"><style>.dashboard-card{max-width:900px;margin:30px auto;padding:28px;background:#fff;border-radius:10px;box-shadow:0 4px 14px #00000012}.dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}.dashboard-tile{padding:18px;border:1px solid #d9e8d9;border-radius:8px;background:#f7fbf7}.dashboard-card button{background:#1b5e20;color:white;border:0;padding:10px 18px;border-radius:5px;cursor:pointer}</style></head><body>
+<header><div class="logo-area"><img src="../images/logo.png" alt="StudentHub Logo"><div><h1>StudentHub</h1><p>Your Student Portal</p></div></div></header>
+<nav aria-label="Main Navigation"><a href="index.html">Home</a><a href="dashboard.php">Dashboard</a><a href="events.html">Events</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<main><section class="dashboard-card"><h2>Admin Dashboard</h2><p>Manage and oversee the StudentHub portal.</p><p>Welcome, <strong><?= h((string)$_SESSION['full_name']) ?></strong>!</p><p>Signed in as <?= h((string)$_SESSION['email']) ?> · Role: <strong><?= h((string)$_SESSION['role']) ?></strong></p>
+<div class="dashboard-grid"><div class="dashboard-tile"><h3>Events</h3><p>View StudentHub events.</p><a href="events.html">Open events</a></div><div class="dashboard-tile"><h3>FAQs</h3><p>Find portal help and answers.</p><a href="faq.html">Read FAQs</a></div><div class="dashboard-tile"><h3>Profile</h3><p>View profile page.</p><a href="profile.html">Open profile</a></div></div>
+<form action="../php/logout.php" method="post" style="margin-top:24px"><input type="hidden" name="csrf_token" value="<?= h(csrf_token()) ?>"><button type="submit">Logout</button></form></section></main><footer><p>&copy; 2026 StudentHub. All rights reserved.</p></footer></body></html>

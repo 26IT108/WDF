@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Database Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="../images/logo.png" alt="StudentHub Logo">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Your Student Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="assignment.html">Assignment</a>
+    <a href="events.html">Events</a>
+    <a href="students.html">Students</a>
+    <a href="profile.html">Profile</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+    <section class="form-container">
+        <h2>Student Registration - MySQL</h2>
+        <p>This form stores student data in the StudentHub MySQL database.</p>
+
+        <form action="../php/process_registration_db.php" method="POST">
+
+            <label for="dbName">Name:</label>
+            <input type="text" id="dbName" name="name" required>
+
+            <label for="dbEmail">Email:</label>
+            <input type="email" id="dbEmail" name="email" required>
+
+            <label for="dbMobile">Mobile:</label>
+            <input type="text" id="dbMobile" name="mobile" maxlength="10" required>
+
+            <label for="dbCourse">Course:</label>
+            <select id="dbCourse" name="course_id" required>
+                <option value="">Select Course</option>
+                <option value="1">Information Technology</option>
+                <option value="2">Computer Science</option>
+                <option value="3">Computer Engineering</option>
+            </select>
+
+            <label for="dbYear">Year:</label>
+            <select id="dbYear" name="year" required>
+                <option value="">Select Year</option>
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+
+            <label for="dbGender">Gender:</label>
+            <select id="dbGender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Register Student</button>
+        </form>
+
+        <p class="registration-view-link">
+            <a href="../php/view_students_db.php">View Students from MySQL</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
